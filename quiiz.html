@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<title>footbal quiz</title>
+<script language="javascript">
+function verif()
+{
+    if(document.f.nom.value=="")
+    {alert("svp entrez votre nom");}
+    if((document.f.age.value<0)||(inNaN(document.f.age.value)))
+    {alert("age invalide");}
+    if((document.f.email.value.indexOf('@')==-1)||(document.f.email.value.indexOf('.')==-1))
+    {alert("mail invalide");}
+    if((document.f.rd[0].checked==0)&&(document.f.rd[0].checked==0)&&(document.f.rd[0].checked==0)&&(document.f.rd[0].checked==0))
+    {alert("choisir un choix");}
+document.write("on va envoyer un mail si ton choix est juste");  
+}
+</script>
+</head>
+<body bgcolor="darkseagreen" text="darkslategray">
+
+<form name="f" onsubmit="verif()">
+<div align="center">
+<h1>footbal quiz</h1>
+<fieldset>
+<label >your full Name</label>
+<input type="text" name="nom" ><br></br>
+<label>age</label>
+<input type ="text" name="age" >
+</fieldset>
+
+<fieldset>
+<legend>formulaire</legend>
+<label>votre mail</label>
+<input type="email" name="email" ><br></br>
+
+<label >Password</label>
+<input type="password" name="c1"><br></br>
+
+
+<label >Confirm Password</label>
+<input type="password" name="c2" ><br></br>
+</fieldset>
+<fieldset>
+
+<legend> which you think will win this cup...?</legend>
+<input type="radio" name="rd" >france
+<input type="radio" name="rd" >argentine
+<input type="radio" name="rd" >portugal
+<input type="radio" name="rd" >bresil
+<input type="radio" name="rd" >other....
+</fieldset>
+<fieldset>
+<legend>your favorite players?</legend>
+<p>
+<input type="checkbox" name="c1">kylian mbappe
+<input type="checkbox" name="c2">lionel messi
+<input type="checkbox" name="c3">cristiano ronaldo
+<input type="checkbox" name="c4">neymar
+</p>
+</fieldset>
+<fieldset>
+<legend>Which world cup did you like the most ?</legend>
+<select name="select" ><option>
+
+<option value=1 selected="true" >2022 qatar
+<option value=2 >2018 russie
+<option value=3 >2014 bresil
+<option value=4 >2010 afrique du sud
+</select>
+</fieldset>
+</br></br>
+<input type=submit value="envoyer">
+<input type="reset" value="annuler">
+<div >if you want to go to the previous page<a href="page1.html">cilck here ... &#128591;</a></div>
+</div>
+</form>
+</body>
+</html>

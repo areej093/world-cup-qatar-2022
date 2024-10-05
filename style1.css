@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:"poppins" sans-serif;
+  }
+  
+  html {
+    font-size: 65%;
+  }
+  
+  body {
+    background: url("img1.jpg") no-repeat center center/cover;
+    overflow: hidden;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #21293a;
+    color: #fff;
+    }
+  header .fifa {
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(48, 87, 102);
+  }
+ header .a1 a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 05px;
+    color: #fff;
+    letter-spacing: 1px;
+    }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+   section h1 {
+    color: #fff;
+    font-size:10rem;
+    letter-spacing: 0.9rem;
+    text-align: center;
+  }
+  
